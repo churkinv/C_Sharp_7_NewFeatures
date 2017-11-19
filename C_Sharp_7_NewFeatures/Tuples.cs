@@ -23,6 +23,8 @@ namespace C_Sharp_7_NewFeatures
             var result = tupleDictionary[(100, 50)];
             Console.WriteLine(result);
 
+            //Deconstruction of tuple
+            (int hours, int minutes, int seconds) = GetTime();
         }
 
         public (int, int, int) GetTime()
