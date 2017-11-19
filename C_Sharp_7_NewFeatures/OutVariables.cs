@@ -20,7 +20,7 @@ namespace C_Sharp_7_NewFeatures
             WriteLine($"{hours}:{minutes}:{seconds}");
         }
 
-        public void RunVariablesOut() // and new much cleaner way, and the same result
+        public void RunVariablesOut() // new much cleaner way, and the same result
         {
             GetTime(out int hours, out int minutes, out int seconds);
             WriteLine($"{hours}:{minutes}:{seconds}");
