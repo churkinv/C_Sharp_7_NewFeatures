@@ -48,11 +48,18 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LocalFunctionsTests.cs" />
     <Compile Include="TuplesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C_Sharp_7_NewFeatures\C_Sharp_7_NewFeatures.csproj">
+      <Project>{7223EAA1-D79D-4A16-BB3F-F8D773400975}</Project>
+      <Name>C_Sharp_7_NewFeatures</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
