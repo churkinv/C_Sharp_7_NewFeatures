@@ -20,7 +20,7 @@ namespace C_Sharp_7_NewFeatures
             //we can create conditions using when keyword and display result under certain criteria
             switch (theEmmployee)
             {
-                case VicePresident vp when (vp.StockShares < 5000):  
+                case VicePresident vp when (vp.StockShares < 5000):   // Examples with figures: case Triangle(int Width, int Height, int Base)
                     WriteLine($"Junior VP with: {vp.StockShares} shares");
                     break;
 
@@ -29,8 +29,8 @@ namespace C_Sharp_7_NewFeatures
                     break;
 
                 case Manager m: // important: the order of declaration of cases here is matter, 
-                                //if we put Employee at first it would say say it is already handled by previous case. 
-                                //So in this case we could have kind of if statements 
+                                // if we put Employee at first it would say say it is already handled by previous case. 
+                                // So in this case we could have kind of if statements 
                     WriteLine($"Number of managed employees {m.NumberManaged}");
                     break;
 

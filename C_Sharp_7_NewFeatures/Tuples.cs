@@ -24,7 +24,16 @@ namespace C_Sharp_7_NewFeatures
             Console.WriteLine(result);
 
             //Deconstruction of tuple
-            (int hours, int minutes, int seconds) = GetTime();
+            //(int hours, int minutes, int seconds) = GetTime(); /// or
+            var (hoursD, minutesD, secondsD) = GetTimeDeconstruct();
+
+            if (minutesD > 30)
+                hoursD++;
+            Console.WriteLine($"{hoursD}:{ minutesD}:{ secondsD}");
+            //or we can deconstruct in already declared local variables:
+            int a, b, c;
+            (a, b, c) = GetTimeDeconstruct();
+
         }
 
         public (int, int, int) GetTime()
@@ -33,6 +42,12 @@ namespace C_Sharp_7_NewFeatures
         }
 
         public (int hours, int minutes, int seconds) GetTimeNamed()
+        {
+            return (10, 20, 30);
+        }
+
+
+        public (int, int, int) GetTimeDeconstruct() // no need names as we are going it to deconstruct
         {
             return (10, 20, 30);
         }
