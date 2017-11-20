@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConditionalSwitchStatements.cs" />
+    <Compile Include="LanguageEnhancements.cs" />
     <Compile Include="LocalFunctions.cs" />
     <Compile Include="OutVariables.cs" />
     <Compile Include="Tuples.cs" />

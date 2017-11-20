@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LanguageEnhancementsTests.cs" />
     <Compile Include="LocalFunctionsTests.cs" />
     <Compile Include="TuplesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
